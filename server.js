@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var cors = require('cors');
 var bodyParser = require('body-parser');
 var request = require('request');
 var PORT = 8090;
@@ -8,11 +9,7 @@ var baseUrl = 'http://lolapi.games-cube.com';
 
 
 // cors
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+app.use(cors());
 
 // all champoions
 app.get('/championList', function(req, res) {
