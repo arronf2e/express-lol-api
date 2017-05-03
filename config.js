@@ -4,11 +4,9 @@ const TOKEN = {
 const VIDEOTOKEN = {
   "DAIWAN-API-TOKEN":"BD496-71ABA-49F7D-09BD2"
 };
-const baseUrl = 'http://lolapi.games-cube.com';
 
 module.exports = {
 	TOKEN,
-	VIDEOTOKEN,
-	baseUrl
+	VIDEOTOKEN
 }
 
