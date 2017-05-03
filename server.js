@@ -7,6 +7,13 @@ var tokens = require('./config')
 var baseUrl = 'http://lolapi.games-cube.com';
 
 
+// cors
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // all champoions
 app.get('/championList', function(req, res) {
 	request({
