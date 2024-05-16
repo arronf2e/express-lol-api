@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arronf2e/express-lol-api"
+  },
+  "author": "Arron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arronf2e/express-lol-api/issues"
+  },
+  "homepage": "https://github.com/arronf2e/express-lol-api#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
